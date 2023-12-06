@@ -1,0 +1,11 @@
+<div class="new-board-dialog">
+    <div class="content">
+        <h2>New board</h2>
+        <p>Board name: <input type="text" [(ngModel)]="boardName" name="boardName" required=""/></p>
+
+        <div class="actions">
+            <button mat-button (click)="onSubmit()">Save</button>
+            <button mat-button (click)="onClose()">Cancel</button>
+        </div>
+    </div>
+</div>

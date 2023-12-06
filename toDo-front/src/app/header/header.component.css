@@ -1,0 +1,35 @@
+:host {
+  --background: #9c88ff;
+  --navbar-width: 256px;
+  --navbar-width-min: 80px;
+  --navbar-dark-primary: #18283b;
+  --navbar-dark-secondary: #2c3e50;
+  --navbar-light-primary: #f5f6fa;
+  --navbar-light-secondary: #8392a5;
+}
+
+#header-bar {
+  margin: auto;
+  height: calc(100% - 1vw);
+  margin-left: 1vh;
+  top: 1vw;
+  background: var(--navbar-dark-primary);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  color: var(--navbar-light-primary);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+#header-bar-name {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  min-height: 7vh;
+  font-size: 1.3rem;
+  transition: opacity 1s;
+  text-align: center;
+  flex-grow: 1; /* Allow the element to grow and take available space */
+}
+

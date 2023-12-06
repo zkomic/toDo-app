@@ -1,0 +1,18 @@
+[
+  {
+    "taskName": "Task 1",
+    "taskStatus": "TO_DO"
+  },
+  {
+    "taskName": "Task 2",
+    "taskStatus": "IN_PROGRESS"
+  },
+  {
+    "taskName": "Task 3",
+    "taskStatus": "IN_PROGRESS"
+  },
+  {
+    "taskName": "Task 4",
+    "taskStatus": "DONE"
+  }
+]

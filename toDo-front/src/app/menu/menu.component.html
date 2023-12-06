@@ -1,0 +1,32 @@
+<div id="nav-bar">
+  <input id="nav" type="checkbox" checked="false" />
+  <div id="nav-header"><a id="nav-title"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;ToDo</a>
+    <label for="nav"><span id="nav-burger"></span></label>
+    <hr />
+  </div>
+  <div id="nav-content">
+    <div *ngIf="isValid">
+      <div class="nav-button" *ngFor="let board of boards">
+        <a>
+        <div (click)="getBoardById(board.id!)">
+          <i class="fas fa-clipboard"></i>
+          <span>{{board.name}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr />
+    <div class="nav-button" (click)="newBoard()"><i class="fas fa-plus"></i><span>New board</span></div>
+    <hr />
+    <div id="nav-content-highlight"></div>
+  </div>
+  <input id="nav-footer" type="checkbox" />
+  <div id="nav-footer">
+    <div id="nav-footer-heading">
+      <div id="nav-footer-avatar"><img src="./assets/images/avatar.png"></div>
+      <div id="nav-footer-titlebox">
+        <a id="nav-footer-title">zdlaka</a>
+      </div>
+    </div>
+  </div>
+</div>

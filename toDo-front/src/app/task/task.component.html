@@ -1,0 +1,15 @@
+<div class="option">
+  <ul>
+    <div class="card" *ngFor="let task of tasks">
+    <div class="square">
+      <li>
+        <p class="task-name">{{task.name}}</p>
+        <div class="task-actions">
+          <button class="edit" (click)="editTask(task)"><i class="fa fa-pen"></i></button>
+          <button class="delete" (click)="deleteTask(task)"><i class="fa fa-trash"></i></button>
+        </div>
+      </li>
+    </div>
+    </div>
+  </ul>
+</div>

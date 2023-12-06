@@ -1,0 +1,19 @@
+<div class="button-square">
+  <button (click)="addCard()" class="add-list-button">
+    <i class="fa fa-plus"></i>&nbsp;&nbsp;Add new list
+  </button>
+</div>
+
+<div class="column">
+  <div class="col-sm-4" *ngFor="let card of cards">
+    <app-card
+      [card]="card"
+      [tasks]="tasks"
+      (taskAdded)="onAddTask($event)"
+      (taskDeleted)="onDeleteTask($event)"
+      (taskEdited)="onEditTask($event)"
+      (cardDeleted)="onDeleteCard($event)"
+    >
+    </app-card>
+  </div>
+</div>

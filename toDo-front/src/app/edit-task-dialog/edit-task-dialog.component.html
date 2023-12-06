@@ -1,0 +1,16 @@
+<div class="edit-task-dialog">
+    <div class="content">
+        <h2>Edit Task</h2>
+        <p>Task name: <input type="text" [(ngModel)]="name"></p>
+        <p>Status: <input type="text" [(ngModel)]="status"></p>
+
+        <div class="actions">
+            <button mat-button (click)="onSubmit()">Save</button>
+            <button mat-button (click)="onClose()">Cancel</button>
+            <div class="error" *ngIf="errorMessage" class="error-message">
+                {{ errorMessage }}
+            </div>
+        </div>
+        
+    </div>
+</div>

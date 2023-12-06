@@ -1,0 +1,14 @@
+<div class="card">
+  <button class="close-button" (click)="deleteCard()"><i class="fa-solid fa-xmark"></i>
+  </button>
+  <h2>{{card?.name}}</h2>
+  <p>Status:{{card?.status}}<p>
+
+    <app-task [tasks]="filterTasks()" (taskDeleted)="deleteTask($event)" (taskEdited)="editTask($event)"></app-task>
+
+  <div class="square">
+    <div class="action">
+      <button (click)="newTask()"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add new task</button>
+    </div>
+  </div>
+</div>

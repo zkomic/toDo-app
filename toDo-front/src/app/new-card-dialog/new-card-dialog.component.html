@@ -1,0 +1,16 @@
+<div class="new-card-dialog">
+    <div class="content">
+        <h2>New card</h2>
+        <p>Card name: <input type="text" [(ngModel)]="cardName" name="cardName"></p>
+        <p>Status: <input type="text" [(ngModel)]="cardStatus" name="cardStatus"></p>
+
+
+        <div class="actions">
+            <button mat-button (click)="onSubmit()">Save</button>
+            <button mat-button (click)="onClose()">Cancel</button>
+            <div class="error" *ngIf="errorMessage" class="error-message">
+                {{ errorMessage }}
+            </div>
+        </div>
+    </div>
+</div>
